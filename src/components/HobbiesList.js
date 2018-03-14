@@ -1,12 +1,13 @@
 import React from 'react';
 
+const listArray = ['leer', 'ver películas', 'dormir'];
+const listItems = listArray.map((hobby) =>
+  <li>{hobby}</li>
+);
+
 const HobbiesList = () => (
   <div>Mis hobbies son:
-      <ul>
-      <li>Leer</li>
-      <li>Ver Películas</li>
-      <li>Dormir</li>
-    </ul>
+      <ul>{listItems}</ul>
   </div>
 )
 
