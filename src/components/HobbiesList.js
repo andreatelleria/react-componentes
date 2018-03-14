@@ -1,8 +1,8 @@
 import React from 'react';
 
-const listArray = ['leer', 'ver películas', 'dormir'];
-const listItems = listArray.map((hobby) =>
-  <li>{hobby}</li>
+const hobbiesArray = ['leer', 'ver películas', 'dormir'];
+const listItems = hobbiesArray.map((hobby, index) =>
+  <li key={index}>{hobby}</li>
 );
 
 const HobbiesList = () => (
